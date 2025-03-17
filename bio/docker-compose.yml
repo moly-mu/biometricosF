@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  backend:
+    build: .
+    container_name: back_biometricos
+
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
+      - sqlite_data:/app/db
+      - static_volume:/app/static
+      - media_volume:/app/media
+    restart: unless-stopped
+
+volumes:
+
+  sqlite_data:
+  static_volume:
+  media_volume:

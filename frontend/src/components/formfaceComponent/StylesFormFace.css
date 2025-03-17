@@ -1,0 +1,207 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.container-s {
+  flex: 1;
+  display: flex;
+  justify-content: column;
+  align-items: center;
+  height: 100vh;
+  background: #ffffff;
+  padding-top: 20px;
+  margin-bottom: 50px;
+}
+
+.img-container-s {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 30px 30px; 
+  margin-top: -5%;
+}
+
+.title-s {
+  color: #000;
+}
+
+.header-logo-s {
+  height: 40px;
+  transition: filter 0.3s ease-in-out;
+}
+
+:not(.dark-mode) .header-logo-s {
+  filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.3));
+}
+
+/* Tarjeta del formulario */
+.form-card-s {
+  background: #f9f9f9;
+  padding: 50px;
+  border-radius: 7px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+  max-width: 900px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Diseño de la forma */
+.form-layout-s {
+  display: flex;
+  align-items: flex-start; /* Alineación superior */
+  justify-content: space-between;
+  width: 100%;
+  gap: 20px;
+}
+
+/* Sección de entradas */
+.input-section-s {
+  width: 375px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Grupos de entrada con espaciado uniforme */
+.input-group-s {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  background: #fff;
+}
+
+/* Carga de imagen */
+.image-upload-s {
+  width: 430px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 10px;
+  text-align: left;
+  color: #000;
+  border-radius: 8px;
+  background: #f9f9f9;
+  cursor: pointer;
+}
+
+.image-upload-s label {
+  margin-top: -10px;
+}
+
+.image-upload-s input {
+  display: none;
+}
+
+/* Imagen de la hoja */
+.upload-icon-s {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+  object-fit: contain;
+}
+
+.image-upload-s label {
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+.upload-box-s {
+  width: 100%;
+  padding: 60px 20px;
+  border: 2px dashed #ccc;
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+}
+
+.upload-icon-s {
+  font-size: 28px;
+  margin-bottom: 5px;
+}
+
+.upload-text-s {
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.upload-button-s {
+  margin-top: 5px;
+  padding: 8px 16px;
+  background: none;
+  border: none;
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.upload-button-s:hover {
+  color: #002366;
+}
+
+/* Botones */
+.buttons-s {
+  display: flex;
+  justify-content: flex-start; /* Alinea los botones a la derecha */
+  gap: 15px; /* Espacio entre botones */
+  width: 100%;
+  margin-top: 30px;
+}
+
+.btn {
+  padding: 12px 168px;
+  border: none;
+  border-radius: 7px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.1s ease;
+}
+
+.btn-register-s {
+  background: #002366;
+  color: #fff;
+}
+
+.btn-register-s:hover {
+  border: 1px solid #002366;
+  background: #ffffff;
+  color: #002366
+}
+
+.btn-b-s {
+  background: white ;
+  border: 1px solid #002366 ;
+  color: #002366 ;
+}
+
+.btn-b-s:hover{
+  background: #002366;
+  border: 1px solid #ffffff;
+  color: #fff;
+}

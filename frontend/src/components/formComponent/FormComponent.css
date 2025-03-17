@@ -1,0 +1,158 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+  
+.app-container-form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background: #ffffff;
+    padding-top: 20px;
+    padding-bottom: 80px;
+    margin-bottom: 50px;
+}
+
+.container-form {
+    background: #f9f9f9;
+    padding: 50px;
+    border-radius: 7px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+    max-width: 900px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 17%;
+}
+
+.title-f {
+    color: #000;
+}
+
+.qr {
+    display: flex;
+    flex-direction: column;
+    width: 48px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #444;
+}
+
+.form-layout {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+}
+
+/* Fila de dos campos */
+.row-fields {
+    display: flex;
+    justify-content: space-between;.
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+/* Ajuste de los inputs */
+.input-section-f {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Tamaño uniforme para las mitades */
+.input-half {
+    width: 48%;
+}
+
+/* Contenedor del Código QR */
+.container-send-download {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 48%;
+}
+
+/* Ajuste del botón "Atrás" */
+.btn-back {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    width: 48px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #444;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    background: #fff;
+}
+
+.form-button-generar {
+    padding: 11px 135px;
+    border: 1px solid #002366;
+    border-radius: 7px;
+    font-size: 16px;
+    cursor: pointer;
+    background: #fff;
+    color: #002366;
+    transition: all 0.1s ease;
+}
+
+.form-button-generar:hover {
+    border: 1px solid #002366;
+    background: #002366;
+    color: #fff;
+}
+
+.form-button-download, .btn-back {
+    padding: 12px 168px;
+    border: 1px solid #002366;
+    border-radius: 7px;
+    font-size: 16px;
+    cursor: pointer;
+    background: #002366;
+    color: #fff;
+    transition: all 0.1s ease;
+}
+
+.form-button-download:hover, .btn-back:hover {
+    background: #fff;
+    border: 1px solid #002366;
+    color: #002366;
+}
+
+.qr-image {
+    margin-top: 10px;
+    width: 150px;
+    height: 150px;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+footer {
+    width: 100%;
+    margin-top: auto; 
+}

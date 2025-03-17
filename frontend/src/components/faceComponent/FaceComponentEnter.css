@@ -1,0 +1,68 @@
+/* Animación para desvanecimiento y deslizamiento desde abajo */
+@keyframes fadeUp {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Contenedor principal */
+.container-face-c {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: fadeUp 1s ease-out; /* Aplicamos la animación */
+}
+
+/* Título */
+.title-face-c {
+  margin-bottom: 10px;
+  color: black;
+  font-family: 'SunsetTime';
+  opacity: 0; /* Comienza invisible */
+  animation: fadeUp 1s ease-out forwards; /* Aparece con animación */
+}
+
+/* Contenedor del video */
+.container-video-face {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0; /* Comienza invisible */
+  animation: fadeUp 1s ease-out 0.5s forwards; /* Aparece con animación */
+}
+
+/* Video con mayor altura, bordes suaves y sombra */
+.video-face-c {
+  border: 1px solid rgba(0, 0, 0, 0.2); /* Borde más tenue */
+  border-radius: 2px; /* Bordes redondeados */
+  box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.3); /* Sombra lateral */
+  width: 450px; /* Mantiene el ancho estándar */
+  height: 338px; /* Aumenta la altura */
+}
+
+/* Canvas oculto */
+.canva-face-c {
+  display: none;
+}
+
+/* Mensaje */
+.message-face-c {
+  color: black;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 20px;
+  font-family: 'SunsetTime';
+  opacity: 0; /* Comienza invisible */
+  animation: fadeUp 1s ease-out 0.5s forwards; /* Aparece con animación */
+}
+
+/* Fuente personalizada */
+@font-face {
+  font-family: 'SunsetTime';
+  src: url('frontend/src/assets/fonts/Sunset Time.otf');
+}

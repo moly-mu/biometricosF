@@ -1,0 +1,137 @@
+/* Reset general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Contenedor principal */
+.conteiner-repA {
+    font-family: "Inter", sans-serif;
+    background: linear-gradient(135deg, #f5f3ff 0%, #f0fdfa 100%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+/* Estilo del título */
+.titu-rep {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 20px;
+}
+
+/* Botón para generar el reporte */
+.button {
+    background: linear-gradient(140.14deg, #2563eb 15.05%, #1e40af 114.99%) padding-box,
+                linear-gradient(142.51deg, #3b82f6 8.65%, #1e3a8a 88.82%) border-box;
+    border-radius: 8px;
+    border: 2px solid transparent;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 12px 30px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 4px 4px 10px rgba(30, 58, 138, 0.3);
+}
+
+.button:hover {
+    opacity: 80%;
+    box-shadow: none;
+}
+
+/* Estilos de la tabla */
+.datos {
+    margin-top: 30px;
+    width: 100%;
+    max-width: 900px;
+    overflow-x: auto;
+}
+
+.tabla-datos {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Encabezados de la tabla */
+.thr {
+    background: #1e3a8a;
+    color: white;
+    text-align: left;
+}
+
+.thr th {
+    padding: 12px 16px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* Filas de la tabla */
+tr {
+    border-bottom: 1px solid #e5e7eb;
+}
+
+td {
+    padding: 12px 16px;
+    font-size: 15px;
+}
+
+/* Estado de asistencia */
+.td-estado {
+    font-weight: 600;
+}
+
+.td-estado.text-green-600 {
+    color: #16a34a;
+}
+
+.td-estado.text-red-600 {
+    color: #dc2626;
+}
+
+/* Mensaje de carga y error */
+.carga-datos,
+.error {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #1e3a8a;
+}
+
+.error {
+    color: #dc2626;
+}
+
+/* No hay datos */
+.td-nhdd {
+    text-align: center;
+    padding: 20px;
+    font-size: 16px;
+    color: #6b7280;
+}
+
+/* Diseño responsive */
+@media (max-width: 768px) {
+    .titu-rep {
+        font-size: 2rem;
+    }
+
+    .button {
+        font-size: 16px;
+        padding: 10px 24px;
+    }
+
+    .thr th,
+    td {
+        font-size: 14px;
+    }
+}

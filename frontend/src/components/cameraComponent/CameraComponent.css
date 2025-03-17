@@ -1,0 +1,81 @@
+/* Animación para desvanecimiento y deslizamiento desde abajo */
+@keyframes fadeUp {
+    0% {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Contenedor principal */
+  .qr-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 20px;
+      animation: fadeUp 1s ease-out;
+  }
+  
+  /* Título del QR */
+  .qr-title {
+      color: #002366;
+      margin-top: 7%;
+      margin-bottom: 3%;
+      opacity: 0;
+      animation: fadeUp 1s ease-out forwards;
+  }
+  
+  /* Contenedor del video */
+  .qr-video-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      animation: fadeUp 1s ease-out 0.5s forwards;
+  }
+  
+  /* Video con mayor altura, bordes suaves y sombra */
+  .qr-video {
+      border: 1px solid rgba(0, 0, 0, 0.2);
+      border-radius: 2px;
+      box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.3);
+      width: 450px;
+      height: 338px;
+  }
+  
+  /* Canvas oculto */
+  .qr-canvas {
+      display: none;
+  }
+  
+  /* Contenedor del resultado */
+  .qr-result-container h2 {
+      color: black;
+      text-align: center;
+      margin-top: 20px;
+      font-family: 'SunsetTime';
+      opacity: 0;
+      animation: fadeUp 1s ease-out 0.7s forwards;
+  }
+  
+  /* Mensajes del QR */
+  .qr-processing,
+  .qr-message {
+      color: black;
+      font-size: 16px;
+      text-align: center;
+      margin-top: 20px;
+      font-family: 'SunsetTime';
+      opacity: 0;
+      animation: fadeUp 1s ease-out 0.5s forwards;
+  }
+  
+  /* Fuente personalizada */
+  @font-face {
+      font-family: 'SunsetTime';
+      src: url('frontend/src/assets/fonts/Sunset Time.otf');
+  }
+  

@@ -1,0 +1,67 @@
+.card-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card {
+    background-color: #315b81;
+    color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    width: 400px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 10px;
+}
+.card-title {
+    font-size: 24px;
+    color: #ffffff;
+    margin-bottom: 16px;
+    font-family: 'Virsut';
+}
+.card-subtitle {
+    font-size: 16px;
+    color: #ffffff;
+    margin-bottom: 24px;
+    font-family: 'Virsut';
+}
+.card-actions {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; /* Centra los botones horizontalmente */
+    gap: 10px; 
+    margin-top: 20px;
+}
+.register-button,
+.face-register-button,
+.fingerprint-button {
+    color: #202129;
+    background-color: #ffffff;
+    width: 100%; /* Ancho completo dentro del contenedor */
+    border-radius: 7px;
+    height: 40px;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    font-size: 16px; /* Tamaño de fuente consistente */
+    transition: background-color 0.3s ease, opacity 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra como el botón QR */
+    font-family: 'Virust';
+}
+.register-button:hover,
+.face-register-button:hover,
+.fingerprint-button:hover {
+    background-color: #e1e2e2;
+    opacity: 1;
+}
+.face-register-button {
+    background-color: #ffffff; /* Mantén el color blanco */
+}
+.fingerprint-button {
+    background-color: #ffffff; /* Igual que los demás botones */
+}
+.button-regis-codigo{
+    display: flex;
+    justify-content: center;
+}

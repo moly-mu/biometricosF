@@ -1,0 +1,153 @@
+/* Asegurar que el HTML y el body ocupen toda la pantalla */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Contenedor de la imagen y el botón */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 30px 30px; /* Espaciado para que no quede pegado a los bordes */
+  margin-top: 20px;
+}
+
+/* Imagen del logo */
+.header-form-logo {
+  height: 40px;
+  transition: filter 0.3s ease-in-out;
+}
+
+/* Botón de modo oscuro */
+.dark-mode-toggle {
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Contenedor principal */
+.app-container-welcome {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  font-family: 'Inter', sans-serif;
+  background-color: #f8f9fa;
+  color: #333333;
+  transition: background 0.3s, color 0.3s;
+}
+
+/* Contenido principal alineado a la izquierda con más margen arriba */
+.main-content {
+  flex-grow: 1;
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 80px; /* MÁS ESPACIO AL INICIO */
+}
+
+/* Título "Reconocimiento Facial" */
+.title  {
+  font-size: 2.5rem !important;
+  line-height: 1.2;
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 10px; 
+  margin-top: -200px !important;
+  color: #333333 !important;
+  transition: color 0.3s ease-in-out;
+  margin-left: -250px !important;
+}
+
+/* Título principal "IUDC Sistema de Control de Acceso Entrada" */
+h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: left;
+  margin-top: 50px; /* MÁS ESPACIO ENTRE EL CUADRO DE FACE Y EL TÍTULO */
+  margin-left: 5.5%;
+  margin-bottom: -9%;
+}
+
+/* Cuadro de FaceRecognition */
+.face-recognition-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  margin-left: auto;
+}
+
+/* Footer pegado abajo pero con más margen del contenido */
+footer {
+  color: white;
+  padding: 2rem;
+  width: 100%;
+  margin-top: 400px; /* MÁS ESPACIO ENTRE EL CONTENIDO Y EL FOOTER */
+}
+
+/* ---------------------- */
+/*        MODO OSCURO     */
+/* ---------------------- */
+
+.dark-mode {
+  background-color: #333333;
+  color: #f8f9fa;
+}
+
+.dark-mode .title {
+  color: #f8f9fa !important;
+}
+
+.dark-mode h1 {
+  color: #f8f9fa !important;
+}
+
+:not(.dark-mode) .header-form-logo {
+  filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.3));
+}
+
+/* Animación de aparición del texto */
+.text-animation {
+  opacity: 0; /* Comienza invisible */
+  transform: translateY(20px); /* Comienza abajo */
+  filter: blur(5px); /* Comienza borroso */
+  transition: opacity 0.8s ease, transform 0.8s ease, filter 0.8s ease; /* Transiciones suaves */
+}
+
+/* Clase cuando el texto se vuelve visible */
+.text-animation.visible {
+  opacity: 1; /* Totalmente visible */
+  transform: translateY(0); /* Se mueve a su lugar */
+  filter: blur(0); /* Elimina el desenfoque */
+}
+
+/* Animación para los títulos */
+.title, h1 {
+  animation: fadeInFromBottom 1s ease-out forwards;
+}
+
+@keyframes fadeInFromBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+    filter: blur(5px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+

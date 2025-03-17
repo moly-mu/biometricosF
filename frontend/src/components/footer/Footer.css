@@ -1,0 +1,125 @@
+/* Estilos generales para el pie de página */
+footer {
+    background-color: #00102D;
+    color: #ffffff;
+    padding: 40px 0;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Estilo de la sección de contenido */
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-bottom: 40px;
+}
+
+/* Logo en el pie de página */
+.footer-logo img {
+    height: 45px;
+    width: auto;
+}
+
+/* Estilos para las columnas */
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 800px;
+    width: 100%;
+}
+
+.footer-column {
+    width: 45%;
+}
+
+.footer-column p {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-list a {
+    color: #969595;
+    font-size: 14px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-list a:hover {
+    color: #072442;
+}
+
+.footer-list i {
+    margin-left: 5px;
+}
+
+/* Estilos de la sección de copyright y botones sociales */
+.footer-container {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.copyright-text {
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.buttons-social {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.buttons-social a {
+    color: #ffffff;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.buttons-social a:hover {
+    color: #072442;
+}
+
+/* Estilos de la línea divisoria */
+hr {
+    border: 0;
+    border-top: 1px solid #ffffff; /* Cambiado a blanco */
+    margin: 40px auto;
+    max-width: 90%;
+    
+}
+
+/* Estilos de la versión oscura (dark mode) */
+.dark-footer {
+    background-color: #ffffff;
+    color: #fff;
+}
+
+.dark-footer .footer-list a {
+    color: #fff;
+}
+
+.dark-footer .footer-list a:hover {
+    color: #072442;
+}
+
+.dark-footer .buttons-social a {
+    color: #fff;
+}
+
+.dark-footer .buttons-social a:hover {
+    color: #072442;
+}
+
+.dark-footer .copyright-text {
+    color: #072442;
+}
